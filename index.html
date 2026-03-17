@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>福間税理士事務所 | 福岡の税務・会計・相続のプロフェッショナル</title>
-    <meta name="description" content="福岡の福間税理士事務所。法人税務、個人確定申告、相続税対策まで幅広くサポート。経験豊富な税理士がお客様の課題を解決します。">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>福間税理士事務所 | 福岡の税務・会計のプロフェッショナル</title>
+    <meta name="description" content="福岡の福間税理士事務所。法人税務、個人確定申告、相続税対策まで、税務・会計のことなら何でもお任せください。">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- ヘッダー -->
@@ -21,16 +20,15 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="#services">サービス</a></li>
-                        <li><a href="#strengths">選ばれる理由</a></li>
                         <li><a href="#about">事務所概要</a></li>
-                        <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
                     </ul>
+                    <button class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </nav>
-                <div class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
         </div>
     </header>
@@ -43,74 +41,75 @@
         <div class="container">
             <div class="hero-content">
                 <h2 class="hero-title">
-                    福岡で信頼される<br>
-                    <span class="highlight">税務のプロフェッショナル</span>
+                    <span class="hero-subtitle">福岡の税務・会計なら</span>
+                    <span class="hero-main-title">信頼と実績の<br>福間税理士事務所</span>
                 </h2>
-                <p class="hero-text">
+                <p class="hero-description">
                     法人税務から個人確定申告、相続税対策まで<br>
-                    お客様の大切な資産と事業を全力でサポートします
+                    お客様の大切な財産と事業を全力でサポートいたします
                 </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">無料相談のご予約</a>
-                    <a href="tel:092-000-0000" class="btn btn-secondary">092-000-0000</a>
-                </div>
-                <div class="hero-features">
-                    <div class="feature-item">
-                        <span class="feature-icon">📞</span>
-                        <span>初回相談無料</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">⏰</span>
-                        <span>土日対応可</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">🏢</span>
-                        <span>法人・個人対応</span>
-                    </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button primary">
+                        <i class="fas fa-phone"></i>
+                        無料相談のお申し込み
+                    </a>
+                    <a href="tel:" class="cta-button secondary">
+                        <i class="fas fa-phone"></i>
+                        電話で相談する
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- サービス紹介 -->
-    <section id="services" class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">サービス内容</h2>
-                <p class="section-subtitle">幅広い税務サービスでお客様をトータルサポート</p>
+                <h2 class="section-title">サービス</h2>
+                <p class="section-description">お客様のニーズに合わせた幅広いサービスを提供しています</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>法人税務</h3>
-                    <p>法人税申告書作成、税務調査対応、節税対策まで法人のあらゆる税務問題に対応します。</p>
-                    <ul class="service-list">
-                        <li>法人税申告</li>
-                        <li>消費税申告</li>
-                        <li>税務調査対応</li>
-                        <li>節税コンサルティング</li>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="service-title">法人税務</h3>
+                    <p class="service-description">
+                        法人税申告書の作成から月次決算、税務相談まで、企業の税務業務を包括的にサポートします。
+                    </p>
+                    <ul class="service-features">
+                        <li>法人税申告書作成</li>
+                        <li>月次・年次決算</li>
+                        <li>税務相談・節税対策</li>
                     </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">👤</div>
-                    <h3>個人確定申告</h3>
-                    <p>個人事業主から副業収入まで、確定申告に関するご相談を承ります。</p>
-                    <ul class="service-list">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="service-title">個人確定申告</h3>
+                    <p class="service-description">
+                        個人事業主の確定申告から副業所得まで、個人の税務申告を丁寧にサポートします。
+                    </p>
+                    <ul class="service-features">
                         <li>確定申告書作成</li>
-                        <li>青色申告対応</li>
-                        <li>医療費控除</li>
-                        <li>住宅ローン控除</li>
+                        <li>帳簿作成・記帳代行</li>
+                        <li>副業・不動産所得対応</li>
                     </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>相続税対策</h3>
-                    <p>相続税の申告から事前の相続対策まで、専門的なアドバイスを提供します。</p>
-                    <ul class="service-list">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="service-title">相続税対策</h3>
+                    <p class="service-description">
+                        相続税の申告から事前の相続対策まで、大切な財産の承継をサポートします。
+                    </p>
+                    <ul class="service-features">
                         <li>相続税申告</li>
-                        <li>相続税対策</li>
-                        <li>遺産分割協議</li>
-                        <li>事業承継支援</li>
+                        <li>相続対策・事業承継</li>
+                        <li>贈与税申告</li>
                     </ul>
                 </div>
             </div>
@@ -118,68 +117,73 @@
     </section>
 
     <!-- 選ばれる理由 -->
-    <section id="strengths" class="strengths">
+    <section class="reasons">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">福間税理士事務所が選ばれる理由</h2>
-                <p class="section-subtitle">お客様に選ばれ続ける3つの強み</p>
+                <h2 class="section-title">選ばれる理由</h2>
+                <p class="section-description">なぜ多くのお客様に選ばれているのか</p>
             </div>
-            <div class="strengths-grid">
-                <div class="strength-card">
-                    <div class="strength-number">01</div>
-                    <div class="strength-icon">💡</div>
-                    <h3>豊富な経験と専門性</h3>
-                    <p>20年以上の実務経験を持つ税理士が、複雑な税務問題も的確に解決。最新の税制改正にも迅速に対応し、お客様に最適な提案を行います。</p>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">01</div>
+                    <h3 class="reason-title">豊富な経験と実績</h3>
+                    <p class="reason-description">
+                        長年にわたり福岡地域の企業・個人のお客様をサポートしてきた豊富な経験と実績があります。様々な業種・規模のお客様に対応可能です。
+                    </p>
                 </div>
-                <div class="strength-card">
-                    <div class="strength-number">02</div>
-                    <div class="strength-icon">🤝</div>
-                    <h3>親身なサポート体制</h3>
-                    <p>お客様一人ひとりに寄り添った丁寧なサービスを提供。初回相談は無料で、土日の対応も可能です。お気軽にご相談ください。</p>
+                <div class="reason-card">
+                    <div class="reason-number">02</div>
+                    <h3 class="reason-title">迅速・丁寧な対応</h3>
+                    <p class="reason-description">
+                        お客様からのご相談には迅速にお応えし、分かりやすく丁寧な説明を心がけています。税務の専門用語も分かりやすくご説明します。
+                    </p>
                 </div>
-                <div class="strength-card">
-                    <div class="strength-number">03</div>
-                    <div class="strength-icon">📊</div>
-                    <h3>明確な料金体系</h3>
-                    <p>事前にお見積りを提示し、追加料金は発生しません。お客様の規模や業種に応じた適正価格で、高品質なサービスを提供します。</p>
+                <div class="reason-card">
+                    <div class="reason-number">03</div>
+                    <h3 class="reason-title">地域密着のサービス</h3>
+                    <p class="reason-description">
+                        福岡に根ざした地域密着型のサービスで、お客様との長期的な信頼関係を大切にしています。アフターフォローも万全です。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 事務所概要 -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">事務所概要</h2>
+            </div>
             <div class="about-content">
                 <div class="about-info">
-                    <h2 class="section-title">事務所概要</h2>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <dt>事務所名</dt>
-                            <dd>福間税理士事務所</dd>
+                    <div class="info-item">
+                        <div class="info-label">事務所名</div>
+                        <div class="info-value">福間税理士事務所</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">所在地</div>
+                        <div class="info-value">福岡県</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">電話番号</div>
+                        <div class="info-value">
+                            <a href="tel:">お電話でお問い合わせください</a>
                         </div>
-                        <div class="info-item">
-                            <dt>所在地</dt>
-                            <dd>〒810-0000<br>福岡市中央区○○○○</dd>
-                        </div>
-                        <div class="info-item">
-                            <dt>電話番号</dt>
-                            <dd><a href="tel:092-000-0000">092-000-0000</a></dd>
-                        </div>
-                        <div class="info-item">
-                            <dt>営業時間</dt>
-                            <dd>平日 9:00～18:00<br>（土日祝日は事前予約制）</dd>
-                        </div>
-                        <div class="info-item">
-                            <dt>アクセス</dt>
-                            <dd>地下鉄○○駅より徒歩3分<br>お車でお越しの際は近隣のコインパーキングをご利用ください</dd>
-                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">営業時間</div>
+                        <div class="info-value">平日 9:00〜18:00</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">定休日</div>
+                        <div class="info-value">土日祝日</div>
                     </div>
                 </div>
                 <div class="about-map">
                     <div class="map-placeholder">
-                        <p>📍 アクセスマップ</p>
-                        <span>福岡市中央区</span>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>福岡県内</p>
                     </div>
                 </div>
             </div>
@@ -187,34 +191,38 @@
     </section>
 
     <!-- お問い合わせフォーム -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">お問い合わせ</h2>
-                <p class="section-subtitle">お気軽にご相談ください。初回相談は無料です。</p>
+                <p class="section-description">税務・会計のご相談はお気軽にお問い合わせください</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-method">
-                        <h3>📞 お電話でのお問い合わせ</h3>
-                        <p class="phone-number"><a href="tel:092-000-0000">092-000-0000</a></p>
-                        <p class="phone-hours">受付時間：平日 9:00～18:00</p>
-                    </div>
-                    <div class="contact-method">
-                        <h3>✉️ メールでのお問い合わせ</h3>
-                        <p>下記フォームよりお問い合わせください。<br>24時間受付、翌営業日にご返答いたします。</p>
+                    <h3>まずはお気軽にご相談ください</h3>
+                    <p>初回相談は無料です。お客様の状況をお聞きし、最適なサポートをご提案いたします。</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>お電話でのお問い合わせ</h4>
+                                <p>平日 9:00〜18:00</p>
+                                <a href="tel:" class="phone-number">お電話ください</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>メールでのお問い合わせ</h4>
+                                <p>24時間受付中</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">お名前 <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">会社名</label>
-                            <input type="text" id="company" name="company">
-                        </div>
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
@@ -227,20 +235,23 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="service">ご相談内容</label>
-                        <select id="service" name="service">
+                        <label for="subject">お問い合わせ種別</label>
+                        <select id="subject" name="subject">
                             <option value="">選択してください</option>
-                            <option value="法人税務">法人税務</option>
-                            <option value="個人確定申告">個人確定申告</option>
-                            <option value="相続税対策">相続税対策</option>
+                            <option value="法人税務">法人税務について</option>
+                            <option value="個人確定申告">個人確定申告について</option>
+                            <option value="相続税対策">相続税対策について</option>
                             <option value="その他">その他</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">ご相談内容詳細 <span class="required">*</span></label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required placeholder="ご相談内容をお聞かせください"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-large">送信する</button>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        お問い合わせを送信
+                    </button>
                 </form>
             </div>
         </div>
@@ -250,13 +261,13 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-info">
                     <h3>福間税理士事務所</h3>
-                    <p>福岡で信頼される税務のプロフェッショナル</p>
+                    <p>福岡県の税務・会計のプロフェッショナル</p>
                 </div>
                 <div class="footer-contact">
-                    <p>📞 <a href="tel:092-000-0000">092-000-0000</a></p>
-                    <p>📍 福岡市中央区○○○○</p>
+                    <p>お問い合わせ：平日 9:00〜18:00</p>
+                    <p>初回相談無料</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -266,13 +277,9 @@
     </footer>
 
     <script>
-        // モバイルメニュー
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const nav = document.querySelector('.nav');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
+        // モバイルメニューの制御
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
         });
 
         // スムーススクロール
@@ -289,14 +296,10 @@
             });
         });
 
-        // ヘッダーのスクロール効果
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+        // フォーム送信処理
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます。確認次第、ご連絡いたします。');
         });
     </script>
 </body>

@@ -3,457 +3,510 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="福岡の福間税理士事務所。法人税務、個人確定申告、相続税対策まで、経験豊富な税理士があなたのビジネスをサポートします。">
-    <title>福間税理士事務所 | 福岡の税理士事務所</title>
-
-    <!-- Google Fonts -->
+    <title>福間税理士事務所 | 創業から税務調査まで安心サポート | 福岡市の税理士</title>
+    <meta name="description" content="福岡市を中心に中小企業の税務サポートを行う福間税理士事務所。創業時の問題をワンストップで解決する経験豊富な税理士事務所です。会社設立、助成金、税務調査対応まで安心してお任せください。">
+    <meta name="keywords" content="税理士,福岡市,会社設立,税務調査,助成金,記帳代行,決算申告,創業支援">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="福間税理士事務所 | 創業から税務調査まで安心サポート">
+    <meta property="og:description" content="福岡市を中心に中小企業の税務サポートを行う経験豊富な税理士事務所。創業から税務まで様々な問題を一つの事務所で総合的に解決可能です。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS will be inserted here */
+    </style>
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header class="header" id="header">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
                     <i class="fas fa-calculator"></i>
                     <span>福間税理士事務所</span>
                 </div>
-                <nav class="nav" id="nav">
-                    <ul class="nav-list">
-                        <li><a href="#hero" class="nav-link">ホーム</a></li>
-                        <li><a href="#services" class="nav-link">サービス</a></li>
-                        <li><a href="#strengths" class="nav-link">選ばれる理由</a></li>
-                        <li><a href="#pricing" class="nav-link">料金</a></li>
-                        <li><a href="#about" class="nav-link">事務所概要</a></li>
-                    </ul>
+                
+                <nav class="nav desktop-nav">
+                    <a href="#services">サービス</a>
+                    <a href="#reasons">選ばれる理由</a>
+                    <a href="#pricing">料金</a>
+                    <a href="#office">事務所概要</a>
+                    <a href="#contact">お問い合わせ</a>
                 </nav>
-                <div class="header-actions">
-                    <a href="tel:03-0000-0000" class="header-phone">
+                
+                <div class="header-contact">
+                    <div class="phone-number">
                         <i class="fas fa-phone"></i>
-                        <span>03-0000-0000</span>
-                    </a>
-                    <a href="#contact" class="btn btn-primary">お問い合わせ</a>
+                        <span>092-123-4567</span>
+                    </div>
+                    <a href="#contact" class="cta-button">無料相談</a>
                 </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
+        
+        <nav class="mobile-nav">
+            <a href="#services">サービス</a>
+            <a href="#reasons">選ばれる理由</a>
+            <a href="#pricing">料金</a>
+            <a href="#office">事務所概要</a>
+            <a href="#contact">お問い合わせ</a>
+            <div class="mobile-phone">
+                <i class="fas fa-phone"></i>
+                <span>092-123-4567</span>
+            </div>
+        </nav>
     </header>
 
-    <!-- ヒーローセクション -->
-    <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="hero-title-small">福岡で選ばれる</span>
-                    経営者に寄り添う税理士
-                </h1>
-                <p class="hero-subtitle">
-                    税務・会計のプロフェッショナルとして、<br class="mobile-break">
-                    お客様のビジネスの成長をサポートします
-                </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary btn-large">
-                        <i class="fas fa-envelope"></i>
-                        無料相談を申し込む
-                    </a>
-                    <a href="tel:03-0000-0000" class="btn btn-secondary btn-large">
+                <h1 class="hero-title">創業から税務調査まで安心サポート</h1>
+                <p class="hero-subtitle">福岡市を中心に中小企業の税務サポートを行い、創業時の問題をワンストップで解決する経験豊富な税理士事務所</p>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-primary">無料相談のご予約</a>
+                    <a href="tel:092-123-4567" class="cta-secondary">
                         <i class="fas fa-phone"></i>
-                        03-0000-0000
+                        092-123-4567
                     </a>
                 </div>
+                
                 <div class="hero-features">
-                    <div class="hero-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>初回相談無料</span>
+                    <div class="feature-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>顧客目線の丁寧な対応</span>
                     </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>土日対応可</span>
+                    <div class="feature-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>ワンストップ解決</span>
                     </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>オンライン対応</span>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>経験豊富な信頼性</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- サービス紹介 -->
-    <section class="services" id="services">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">サービス内容</h2>
-                <p class="section-subtitle">お客様のニーズに合わせた、幅広いサービスをご提供します</p>
+                <h2>主要サービス</h2>
+                <p>何も分からない方でも安心していただけるよう、経験豊富な担当者が企業家をしっかりとバックアップ</p>
             </div>
+            
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-building"></i>
                     </div>
-                    <h3 class="service-title">法人税務顧問</h3>
-                    <p class="service-description">
-                        月次決算から税務申告まで、法人経営に必要な税務・会計業務を包括的にサポート。経営アドバイスも行います。
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> 月次決算・財務分析</li>
-                        <li><i class="fas fa-check"></i> 税務申告書作成</li>
-                        <li><i class="fas fa-check"></i> 税務調査対応</li>
-                        <li><i class="fas fa-check"></i> 経営相談</li>
+                    <h3>会社設立サポート</h3>
+                    <p>法人・個人の選択から設立手続きまで創業時の悩みを総合的に解決いたします。</p>
+                    <ul>
+                        <li>法人形態の選択アドバイス</li>
+                        <li>設立手続き代行</li>
+                        <li>創業計画書作成支援</li>
                     </ul>
                 </div>
-
+                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-coins"></i>
                     </div>
-                    <h3 class="service-title">個人確定申告</h3>
-                    <p class="service-description">
-                        個人事業主、フリーランスの方の確定申告を代行。節税対策もご提案いたします。
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> 所得税確定申告</li>
-                        <li><i class="fas fa-check"></i> 消費税申告</li>
-                        <li><i class="fas fa-check"></i> 青色申告サポート</li>
-                        <li><i class="fas fa-check"></i> 節税対策</li>
+                    <h3>助成金・資金調達</h3>
+                    <p>事業資金の調達方法から助成金申請まで資金面をトータルサポートいたします。</p>
+                    <ul>
+                        <li>助成金申請サポート</li>
+                        <li>融資申請書類作成</li>
+                        <li>資金繰り計画策定</li>
                     </ul>
                 </div>
-
+                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-search"></i>
                     </div>
-                    <h3 class="service-title">会社設立支援</h3>
-                    <p class="service-description">
-                        起業・開業をお考えの方へ、会社設立手続きから創業融資、補助金申請までトータルサポート。
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> 設立手続き代行</li>
-                        <li><i class="fas fa-check"></i> 創業融資サポート</li>
-                        <li><i class="fas fa-check"></i> 補助金・助成金申請</li>
-                        <li><i class="fas fa-check"></i> 事業計画書作成</li>
+                    <h3>税務調査対応</h3>
+                    <p>税務調査時の立会いから対応まで安心してお任せいただける専門サービスです。</p>
+                    <ul>
+                        <li>税務調査立会い</li>
+                        <li>事前準備サポート</li>
+                        <li>修正申告書作成</li>
                     </ul>
                 </div>
-
+                
                 <div class="service-card">
                     <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>記帳代行・決算申告</h3>
+                    <p>月額9,000円から日々の経理処理から決算申告まで全てサポートいたします。</p>
+                    <ul>
+                        <li>日常の記帳代行</li>
+                        <li>決算書・申告書作成</li>
+                        <li>税務相談対応</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reasons Section -->
+    <section id="reasons" class="reasons">
+        <div class="container">
+            <div class="section-header">
+                <h2>選ばれる理由</h2>
+                <p>福間税理士事務所が多くのお客様に選ばれる3つの理由</p>
+            </div>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">01</div>
+                    <div class="reason-icon">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3 class="service-title">相続税対策</h3>
-                    <p class="service-description">
-                        相続税申告、事業承継、生前贈与など、相続に関する幅広いご相談に対応いたします。
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> 相続税申告</li>
-                        <li><i class="fas fa-check"></i> 事業承継対策</li>
-                        <li><i class="fas fa-check"></i> 生前贈与プラン</li>
-                        <li><i class="fas fa-check"></i> 相続税シミュレーション</li>
+                    <h3>顧客目線の丁寧な対応</h3>
+                    <p>お客様の立場に立って一生懸命調べて教えてくれる理想的なサービスを提供。分からないことがあっても安心してご相談いただけます。</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">02</div>
+                    <div class="reason-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>ワンストップ解決</h3>
+                    <p>創業から税務まで様々な問題を一つの事務所で総合的に解決可能。複数の専門家に依頼する手間とコストを削減できます。</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">03</div>
+                    <div class="reason-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>経験豊富な信頼性</h3>
+                    <p>税務調査対応など豊富な経験を持つ信頼できる担当者がサポート。どんな困難な状況でも安心してお任せいただけます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>料金プラン</h2>
+                <p>お客様の事業規模に合わせた明確な料金体系</p>
+            </div>
+            
+            <div class="pricing-table">
+                <div class="pricing-plan">
+                    <h3>スタートアップ</h3>
+                    <div class="price">
+                        <span class="amount">9,000</span>
+                        <span class="currency">円/月</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i>記帳代行（仕訳50件まで）</li>
+                        <li><i class="fas fa-check"></i>決算申告書作成</li>
+                        <li><i class="fas fa-check"></i>税務相談</li>
+                        <li><i class="fas fa-check"></i>電話・メールサポート</li>
                     </ul>
+                    <div class="plan-note">創業間もない小規模事業者様向け</div>
+                </div>
+                
+                <div class="pricing-plan featured">
+                    <div class="popular-badge">人気</div>
+                    <h3>スタンダード</h3>
+                    <div class="price">
+                        <span class="amount">15,000</span>
+                        <span class="currency">円/月</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i>記帳代行（仕訳100件まで）</li>
+                        <li><i class="fas fa-check"></i>決算申告書作成</li>
+                        <li><i class="fas fa-check"></i>税務相談</li>
+                        <li><i class="fas fa-check"></i>月次試算表作成</li>
+                        <li><i class="fas fa-check"></i>年末調整対応</li>
+                        <li><i class="fas fa-check"></i>税務調査立会い</li>
+                    </ul>
+                    <div class="plan-note">中小企業様に最適なプラン</div>
+                </div>
+                
+                <div class="pricing-plan">
+                    <h3>プレミアム</h3>
+                    <div class="price">
+                        <span class="amount">25,000</span>
+                        <span class="currency">円/月</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i>記帳代行（仕訳数無制限）</li>
+                        <li><i class="fas fa-check"></i>決算申告書作成</li>
+                        <li><i class="fas fa-check"></i>税務相談</li>
+                        <li><i class="fas fa-check"></i>月次試算表作成</li>
+                        <li><i class="fas fa-check"></i>年末調整対応</li>
+                        <li><i class="fas fa-check"></i>税務調査立会い</li>
+                        <li><i class="fas fa-check"></i>経営アドバイス</li>
+                        <li><i class="fas fa-check"></i>助成金申請サポート</li>
+                    </ul>
+                    <div class="plan-note">成長企業様向けフルサポート</div>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> 上記は基本料金です。詳細はお気軽にお問い合わせください。</p>
+                <div class="contact-buttons">
+                    <a href="#contact" class="cta-button">無料相談予約</a>
+                    <a href="tel:092-123-4567" class="phone-button">
+                        <i class="fas fa-phone"></i>
+                        092-123-4567
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 選ばれる理由 -->
-    <section class="strengths" id="strengths">
+    <!-- Office Info Section -->
+    <section id="office" class="office">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">福間税理士事務所が選ばれる理由</h2>
-                <p class="section-subtitle">お客様から信頼される3つの強み</p>
+                <h2>事務所概要</h2>
+                <p>福岡市を中心とした福岡県内でサービスを提供しております</p>
             </div>
-            <div class="strengths-grid">
-                <div class="strength-card">
-                    <div class="strength-number">01</div>
-                    <div class="strength-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3 class="strength-title">丁寧なコミュニケーション</h3>
-                    <p class="strength-description">
-                        専門用語を使わず、わかりやすく説明します。些細な疑問でもお気軽にご相談ください。レスポンスも迅速で、メール・電話・オンライン面談など、お客様のご都合に合わせて対応いたします。
-                    </p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-number">02</div>
-                    <div class="strength-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="strength-title">経営サポート力</h3>
-                    <p class="strength-description">
-                        単なる記帳代行や税務申告だけでなく、経営者のパートナーとして財務分析、資金繰り改善、事業拡大のアドバイスを提供。お客様の事業の成長をサポートします。
-                    </p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-number">03</div>
-                    <div class="strength-icon">
-                        <i class="fas fa-yen-sign"></i>
-                    </div>
-                    <h3 class="strength-title">明確な料金体系</h3>
-                    <p class="strength-description">
-                        ご契約前に料金を明示し、追加費用の心配がありません。売上規模に応じた適正価格で、スタートアップから大企業まで柔軟に対応いたします。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 料金プラン -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">料金プラン</h2>
-                <p class="section-subtitle">シンプルで分かりやすい料金体系</p>
-            </div>
-            <div class="pricing-table-wrapper">
-                <table class="pricing-table">
-                    <thead>
-                        <tr>
-                            <th>サービス内容</th>
-                            <th>月額料金（税別）</th>
-                            <th>備考</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>法人税務顧問（年商1,000万円未満）</td>
-                            <td class="price">20,000円〜</td>
-                            <td>記帳代行・月次決算・年末調整含む</td>
-                        </tr>
-                        <tr>
-                            <td>法人税務顧問（年商1,000万〜3,000万円）</td>
-                            <td class="price">30,000円〜</td>
-                            <td>記帳代行・月次決算・年末調整含む</td>
-                        </tr>
-                        <tr>
-                            <td>法人税務顧問（年商3,000万〜5,000万円）</td>
-                            <td class="price">40,000円〜</td>
-                            <td>記帳代行・月次決算・年末調整含む</td>
-                        </tr>
-                        <tr>
-                            <td>個人確定申告（白色申告）</td>
-                            <td class="price">50,000円〜</td>
-                            <td>年1回のスポット対応</td>
-                        </tr>
-                        <tr>
-                            <td>個人確定申告（青色申告）</td>
-                            <td class="price">80,000円〜</td>
-                            <td>年1回のスポット対応</td>
-                        </tr>
-                        <tr>
-                            <td>会社設立サポート</td>
-                            <td class="price">100,000円〜</td>
-                            <td>定款作成・登記手続き含む</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="pricing-note">
-                ※ 料金は目安です。業種・取引量により変動する場合があります。<br>
-                ※ 初回相談は無料です。お気軽にお問い合わせください。
-            </p>
-        </div>
-    </section>
-
-    <!-- 事務所概要 -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">事務所概要</h2>
-                <p class="section-subtitle">お気軽にお問い合わせください</p>
-            </div>
-            <div class="about-content">
-                <div class="about-info">
+            
+            <div class="office-content">
+                <div class="office-info">
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-building"></i>
                         </div>
                         <div class="info-details">
-                            <h4>事務所名</h4>
+                            <h3>事務所名</h3>
                             <p>福間税理士事務所</p>
                         </div>
                     </div>
+                    
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="info-details">
-                            <h4>所在地</h4>
-                            <p>福岡の好立地</p>
+                            <h3>所在地</h3>
+                            <p>福岡県福岡市中央区天神1-1-1<br>天神ビル5階</p>
                         </div>
                     </div>
+                    
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="info-details">
-                            <h4>電話番号</h4>
-                            <p><a href="tel:03-0000-0000">03-0000-0000</a></p>
+                            <h3>電話番号</h3>
+                            <p><a href="tel:092-123-4567">092-123-4567</a></p>
                         </div>
                     </div>
+                    
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="info-details">
-                            <h4>営業時間</h4>
-                            <p>平日 9:00〜18:00<br>（土日祝日は事前予約制）</p>
+                            <h3>営業時間</h3>
+                            <p>平日 9:00 - 17:00<br>（土日祝日は休業）</p>
                         </div>
                     </div>
+                    
                     <div class="info-item">
                         <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-map"></i>
                         </div>
                         <div class="info-details">
-                            <h4>メール</h4>
-                            <p>info@example.com</p>
+                            <h3>対応地域</h3>
+                            <p>福岡市を中心とした福岡県内</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-map">
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>福岡</p>
+                
+                <div class="office-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5234567890123!2d130.4017!3d33.5904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191b2b2b2b2b2%3A0x1234567890abcdef!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSp56We!5e0!3m2!1sja!2sjp!4v1234567890123"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="contact-cta">
+        <div class="container">
+            <div class="contact-content">
+                <h2>お問い合わせ・無料相談</h2>
+                <p>創業から税務調査まで、どんなことでもお気軽にご相談ください。<br>経験豊富な税理士が親身になってサポートいたします。</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>お電話でのお問い合わせ</h3>
+                        <div class="phone-large">
+                            <a href="tel:092-123-4567">092-123-4567</a>
+                        </div>
+                        <p>平日 9:00 - 17:00</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>メールでのお問い合わせ</h3>
+                        <div class="email-form">
+                            <form class="contact-form">
+                                <input type="text" placeholder="お名前" required>
+                                <input type="email" placeholder="メールアドレス" required>
+                                <input type="tel" placeholder="電話番号">
+                                <select required>
+                                    <option value="">相談内容を選択</option>
+                                    <option value="startup">会社設立について</option>
+                                    <option value="subsidy">助成金・資金調達について</option>
+                                    <option value="audit">税務調査について</option>
+                                    <option value="bookkeeping">記帳代行・決算申告について</option>
+                                    <option value="other">その他</option>
+                                </select>
+                                <textarea placeholder="お問い合わせ内容" rows="4"></textarea>
+                                <button type="submit" class="submit-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                    送信する
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- お問い合わせCTA -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-box">
-                <h2 class="contact-title">無料相談を承っております</h2>
-                <p class="contact-description">
-                    税務・会計に関するお悩みは、まずはお気軽にご相談ください。<br>
-                    初回相談は無料です。お電話またはメールにてお問い合わせください。
-                </p>
-                <div class="contact-actions">
-                    <a href="tel:03-0000-0000" class="btn btn-primary btn-large">
-                        <i class="fas fa-phone"></i>
-                        電話で相談する
-                        <span class="contact-phone-number">03-0000-0000</span>
-                    </a>
-                    <a href="mailto:info@example.com" class="btn btn-secondary btn-large">
-                        <i class="fas fa-envelope"></i>
-                        メールで相談する
-                    </a>
-                </div>
-                <div class="contact-hours">
-                    <i class="fas fa-clock"></i>
-                    受付時間: 平日 9:00〜18:00（土日祝日は事前予約制）
+                
+                <div class="contact-note">
+                    <p><i class="fas fa-shield-alt"></i> お客様の個人情報は厳重に管理し、相談内容の秘密は守られます。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- フッター -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-calculator"></i>
-                    <span>福間税理士事務所</span>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-calculator"></i>
+                        <span>福間税理士事務所</span>
+                    </div>
+                    <p>創業から税務調査まで安心サポート</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> <a href="tel:092-123-4567">092-123-4567</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> 福岡県福岡市中央区天神1-1-1 天神ビル5階</p>
+                    </div>
                 </div>
-                <nav class="footer-nav">
-                    <a href="#hero">ホーム</a>
-                    <a href="#services">サービス</a>
-                    <a href="#strengths">選ばれる理由</a>
-                    <a href="#pricing">料金</a>
-                    <a href="#about">事務所概要</a>
-                    <a href="#contact">お問い合わせ</a>
-                </nav>
-                <div class="footer-contact">
-                    <p><i class="fas fa-map-marker-alt"></i> 福岡の好立地</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:03-0000-0000">03-0000-0000</a></p>
-                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+                
+                <div class="footer-section">
+                    <h4>サービス</h4>
+                    <ul>
+                        <li><a href="#services">会社設立サポート</a></li>
+                        <li><a href="#services">助成金・資金調達</a></li>
+                        <li><a href="#services">税務調査対応</a></li>
+                        <li><a href="#services">記帳代行・決算申告</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>事務所情報</h4>
+                    <ul>
+                        <li><a href="#reasons">選ばれる理由</a></li>
+                        <li><a href="#pricing">料金プラン</a></li>
+                        <li><a href="#office">事務所概要</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>営業時間</h4>
+                    <p>平日 9:00 - 17:00</p>
+                    <p>土日祝日は休業</p>
+                    <h4>対応地域</h4>
+                    <p>福岡市を中心とした福岡県内</p>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2026 福間税理士事務所. All rights reserved.</p>
+                <p>&copy; 2025 福間税理士事務所. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
-        // スムーズスクロール
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            const icon = mobileMenuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
                     });
-
-                    // モバイルメニューを閉じる
-                    if (window.innerWidth <= 768) {
-                        nav.classList.remove('active');
-                        mobileMenuToggle.classList.remove('active');
-                    }
+                    // Close mobile menu if open
+                    mobileNav.classList.remove('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
                 }
             });
         });
 
-        // ヘッダー固定効果
-        const header = document.getElementById('header');
-        let lastScroll = 0;
-
+        // Header scroll effect
         window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-
-            if (currentScroll > 100) {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
-
-            lastScroll = currentScroll;
         });
 
-        // モバイルメニュートグル
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const nav = document.getElementById('nav');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            mobileMenuToggle.classList.toggle('active');
-        });
-
-        // スクロールアニメーション
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.service-card, .strength-card').forEach(el => {
-            observer.observe(el);
+        // Contact form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます。内容を確認後、担当者よりご連絡いたします。');
         });
     </script>
 </body>
